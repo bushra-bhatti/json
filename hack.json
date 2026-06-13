@@ -1,5 +1,7 @@
-{
-  "symbol": "FLAG",
-  "name": "Hack",
-  "prices": [1, 9999999, 1, 9999999, 1, 9999999, 1, 9999999, 1, 9999999]
+// Is code ko console mein run karein
+const prices = [];
+for(let i=0; i<5000; i++) {
+    prices.push(i % 2 === 0 ? 1 : 1000000);
 }
+const data = { symbol: "BIG", name: "BigVolatility", prices: prices };
+console.log(JSON.stringify(data));
